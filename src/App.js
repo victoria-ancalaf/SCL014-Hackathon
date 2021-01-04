@@ -1,9 +1,21 @@
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import FormPage from "./Pages/FormPage";
 
 function App() {
   return (
     <div className="App">
-     <h1>MACH</h1>
+    <Router>
+      <Switch>
+        <Route path="/formulario">
+          <FormPage />
+        </Route>
+      </Switch>
+    </Router>
     </div>
   );
 }
