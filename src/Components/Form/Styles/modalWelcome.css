@@ -1,0 +1,11 @@
+.title{
+    text-align: center;
+}
+.imgWelcome{
+    width: 100%;
+}
+.containerImgWelcome{
+    align-self: center;
+    width: 228px;  
+    height: 140px;
+}
