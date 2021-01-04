@@ -1,19 +1,16 @@
-
-import React from 'react'
-import Geolocation from '../Components/Form/Geolocation'
-import React from 'react';
-import ModalWelcome from '../Components/Form/modalWelcome';
-
-
+import React from "react";
+import Geolocation from "../Components/Form/Geolocation";
+import ModalWelcome from "../Components/Form/modalWelcome";
+import Age from "../Components/Form/Age";
 
 const FormPage = () => {
-    return (
-        <div>
-            <h1>FOOOOOOOOOOOOOOOOOOOOOORM</h1>
-            <Geolocation />
-            <ModalWelcome/>
-        </div>
-    )
-}
+  return (
+    <div>
+      <ModalWelcome />
+      <Age />
+      <Geolocation />
+    </div>
+  );
+};
 
-export default FormPage
+export default FormPage;
