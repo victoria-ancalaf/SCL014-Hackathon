@@ -1,0 +1,12 @@
+.dialogClass{
+    display: flex;
+    width: 80%;
+}
+.titleT{
+    text-align: center;
+}
+.imgdiv{
+    align-self: center;
+    width: 5vw;
+    margin: 5%;
+}

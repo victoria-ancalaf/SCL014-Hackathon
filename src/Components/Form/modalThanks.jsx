@@ -1,38 +1,62 @@
-import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import React, { useState } from 'react';
+import './Styles/ModalThanks.css';
+import theme from './Styles/tema';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
+import {makeStyles} from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
+import imgthks from '../../Img/entretencion.svg';
+import MuiButton from '@material-ui/core/IconButton';
+import { isWidthDown } from '@material-ui/core';
 
-export const modalThanks = () => {
-    const [open, setOpen] = React.useState(false);
-    const handleClickOpen = () => {
-        setOpen(true);
-      };
+const useStyle = makeStyles({
+  // dialogClass:{
+  //   paddingTop: 15
+  // },
+  dialogBtnsClass:{
+    justifyContent: 'center'
+  },
+  customBtn: {
+    backgroundColor: '#5C3ECA',
+    borderRadius: 5,
+    color: '#FFFFFF',
+    fontSize: 14,
+    textTransform: 'none',
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: '#D8D8D8'
+  }
+})
+
+const ModalThanks = () => {
+    const [open, setOpen] = useState(true);
       const handleClose = () => {
         setOpen(false);
       };
+      const classes = useStyle()
     return(
-         <div>
-            <Dialog>
-            <MuiDialogTitle id="customized-dialog-title" onClose={handleClose}>
-          ¡GRACIAS POR RESPONDER!
+           <ThemeProvider theme={theme}>
+            <Dialog className='dialogClass'
+      open={open}>
+        <div className='imgdiv'>
+        <img className='imgThnks' alt="celeb" src={imgthks}/>
+        </div>
+            <MuiDialogTitle className='titleT'>
+          <h1>¡GRACIAS POR RESPONDER!</h1>
         </MuiDialogTitle>
         <MuiDialogContent>
             Recuerda que siempre pueder redefinir tu perfil, ingresando a "PERFIL" y luego "REDEFNIR".
         </MuiDialogContent>
-        <MuiDialogActions>
-        <Button onClick={handleClose}>
+        <MuiDialogActions className={classes.dialogBtnsClass}>
+        <MuiButton className={classes.customBtn} onClick={handleClose}>
             Entendido
-        </Button>
+        </MuiButton>
         </MuiDialogActions>
             </Dialog>
-        </div>
+            </ThemeProvider>
       )
       
 }
-export default modalThanks;
+export default ModalThanks;
