@@ -11,7 +11,7 @@ import MuiDialogActions from "@material-ui/core/DialogActions";
 import Typography from "@material-ui/core/Typography";
 import themeGeo from "../Form/ThemeGeo";
 import geolocalizacion from "../../Img/geolocalizacion.svg";
-import './Styles/Geolocation.css';
+import "./Styles/Geolocation.css";
 import { Link } from "react-router-dom";
 
 const useStyle = makeStyles({
@@ -35,7 +35,7 @@ const useStyle = makeStyles({
 const DialogContent = withStyles((theme) => ({
   root: {
     padding: theme.spacing(5),
-    paddingTop: '1vh',
+    paddingTop: "1vh",
   },
 }))(MuiDialogContent);
 
@@ -75,14 +75,14 @@ export default function Geolocation() {
         </DialogContent>
         <DialogActions className={classesGeo.dialogBtnsClass}>
           <Link to="/form7">
-              <Button
+            <Button
               className={classesGeo.btnGeo}
               variant="contained"
               onClick={handleClose}
               color="primary"
             >
-            Activar
-          </Button>
+              Cancelar
+            </Button>
           </Link>
           <Link to="/form7">
             <Button
@@ -91,7 +91,7 @@ export default function Geolocation() {
               onClick={handleClose}
               color="primary"
             >
-              Cancelar
+              Activar
             </Button>
           </Link>
         </DialogActions>
