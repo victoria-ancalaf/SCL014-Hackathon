@@ -1,6 +1,6 @@
 import React from "react";
 import "./Styles/Age.css";
-import Navigation from './Navigation'
+import { Link } from "react-router-dom";
 
 const Age = () => {
   return (
@@ -16,8 +16,17 @@ const Age = () => {
         </form>
       </div>
       </section>
-      <div className="navigation-component">
-        <Navigation />
+      <div className="navigation-component" >
+      <div className="navigation-container">
+      <div>
+        <button className="navigation-btn">{"< "}Atrás</button>
+      </div>
+      <div>
+        <Link to="/form2">
+        <button className="navigation-btn">Siguiente{" >"}</button>
+        </Link>
+      </div>
+    </div>
       </div>
     </div>
   );

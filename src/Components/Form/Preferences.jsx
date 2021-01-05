@@ -17,6 +17,7 @@ import tecnologia from '../../Img/tecnologia.svg';
 import salud from '../../Img/salud.svg';
 import vinos from '../../Img/vinos.svg';
 import checkImg from '../../Img/Check.svg';
+import { Link } from "react-router-dom";
 
 const Preferences = () => {
   const [check, setCheck] = useState(false);
@@ -165,6 +166,18 @@ const Preferences = () => {
           <span class="checkmark"></span>
         </label>
       </div>
+      <div className="navigation-container">
+      <div>
+        <Link to="/form2">
+        <button className="navigation-btn">{"< "}Atrás</button>
+        </Link>
+      </div>
+      <div>
+        <Link to="/form4">
+        <button className="navigation-btn">Siguiente{" >"}</button>
+        </Link>
+      </div>
+    </div>
     </div>
   );
 };
