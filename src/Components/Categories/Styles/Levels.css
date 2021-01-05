@@ -1,0 +1,54 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .welc-cont{
+        font-family: 'Nunito';
+        margin: 3%;
+    }
+    .category{ 
+        display: flex; 
+        flex-direction: row; 
+        font-family: 'Nunito';
+        /* margin: 3%; */
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .cat-title{ 
+        font-size: 1em;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .cat-txt{ 
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: -15px;
+    }
+    .new{ 
+        background-color: #18D5CA;
+        padding-bottom: 8%;
+    }
+    .true{ 
+        background-color: #9B55FF;
+    }
+    .lover{ 
+        background-color: #EE9B00;
+    }
+    .new, .true, .lover{ 
+        border-radius: 8px; 
+        color: #FFFFFF;
+        margin: 0.5% 0.5% 1% 1%;
+    }
+    .walk, .run, .super{
+        position: absolute;
+    }
+    .walk{
+        width: 20vw;
+        left: 24px;
+    }
+    .run{
+        width: 20vw;
+        left: 164px;
+    }
+    .super{
+        width: 12vw;
+        left: 314px;
+    }
+}
