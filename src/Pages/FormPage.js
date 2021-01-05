@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import Geolocation from '../Components/Form/Geolocation'
 import ModalThanks from '../Components/Form/ModalThanks';
 import ModalWelcome from '../Components/Form/modalWelcome';
 // import Geolocation from '../Components/Form/Geolocation'
@@ -10,7 +11,6 @@ const FormPage = () => {
     return (
         <div>
              <ModalThanks/>
-            <h1>FOOOOOOOOOOOOOOOOOOOOOORM</h1>
             <ModalWelcome/>
             {/* <Geolocation /> */}
             <Preferences/>
