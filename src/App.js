@@ -10,8 +10,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact>
-          {/* <HomePage/> */}
-         <ProgressBar />
+          <HomePage/>
         </Route>
       </Switch>
       <Switch>
