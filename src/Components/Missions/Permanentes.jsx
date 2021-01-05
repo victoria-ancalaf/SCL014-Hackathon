@@ -1,7 +1,10 @@
 import React from "react";
 import "./Styles/MissionContent.css";
 
-const Permanentes = () => {
+const Permanentes = ({visible}) => {
+    if(visible === false) {
+        return null
+    }
   return (
     <div className="mission-content">
       <div className="mission-buttons">
