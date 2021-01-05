@@ -1,19 +1,20 @@
 import React from 'react'
 import Geolocation from '../Components/Form/Geolocation'
-import ModalThanks from '../Components/Form/ModalThanks';
+import ModalThanks from '../Components/Form/modalThanks';
 import ModalWelcome from '../Components/Form/modalWelcome';
-// import Geolocation from '../Components/Form/Geolocation'
-// import ModalWelcome from '../Components/Form/modalWelcome';
 import Preferences from '../Components/Form/Preferences';
-
+import Age from "../Components/Form/Age"
+import Gender from "../Components/Form/Gender"
 
 const FormPage = () => {
     return (
         <div>
-             <ModalThanks/>
             <ModalWelcome/>
-            {/* <Geolocation /> */}
+            <Age />
+            <Gender />
             <Preferences/>
+            <Geolocation /> 
+            <ModalThanks/>
         </div>
     )
 }

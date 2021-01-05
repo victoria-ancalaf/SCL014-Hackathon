@@ -48,7 +48,7 @@ const DialogActions = withStyles((theme) => ({
 
 export default function Geolocation() {
   const classesGeo = useStyle();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const handleClose = () => {
     setOpen(false);
