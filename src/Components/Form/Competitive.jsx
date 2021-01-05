@@ -11,7 +11,7 @@ const Competitive = () => {
         </div>
         <div className="box-btn">
           <div>
-            <button className="btn-Competitive">Si, mucho</button>
+            <button className="btn-Competitive">Sí, mucho</button>
           </div>
           <div>
             <button className="btn-Competitive"> No, para nada</button>
