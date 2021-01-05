@@ -8,15 +8,16 @@ function App() {
     <div className="App">
     <Router>
       <Switch>
-        <Route path="/formulario">
-          <FormPage />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/">
+        <Route path="/" exact>
           <HomePage/>
         </Route>
       </Switch>
+      <Switch>
+        <Route path="/form1" exact>
+          <FormPage />
+        </Route>
+      </Switch>
+ 
     </Router>
     </div>
   );
