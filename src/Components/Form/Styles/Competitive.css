@@ -1,7 +1,7 @@
 .container-competitive {
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  height: 62vh;
   padding-top: 14vh;
   width: 93vw;
   margin-left: 2vh;
@@ -13,14 +13,21 @@
   margin-left: 9vh;
 }
 
-.btn-competitive {
+.btn-Competitive {
   background-color: #ffff;
+  height: 34px;
+  color: #555555;
+  font-weight: 500;
 }
 
 .box-btn {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 40vh;
+  height: 23vh;
   align-items: center;
+}
+
+.box-navigator{
+ padding-top: 10vh;
 }
