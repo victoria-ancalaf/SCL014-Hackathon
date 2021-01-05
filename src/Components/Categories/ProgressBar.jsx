@@ -1,8 +1,8 @@
 import { CenterFocusStrong } from "@material-ui/icons";
 import React, { Fragment } from "react";
 import '../Categories/Styles/ProgressBar.css'
-import { CircularProgressbarWithChildren } from "react-circular-progressbar";
-import { makeStyles } from "@material-ui/core/styles";
+import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
+import { makeStyles} from "@material-ui/core/styles";
 import "react-circular-progressbar/dist/styles.css";
 
 const useStyle = makeStyles({
@@ -10,6 +10,7 @@ const useStyle = makeStyles({
     width: 150,
     
   },
+ 
 });
 
 const ProgressBar = () => {
@@ -23,6 +24,13 @@ const ProgressBar = () => {
         <CircularProgressbarWithChildren
           value={50}
           className={classes.divProgrees}
+          counterClockwise={true}
+          styles={buildStyles({
+            pathColor:'#00EDDF',
+            trailColor: '#ffff',
+          })}
+         strokeWidth={12}
+        
         >
           {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
 
@@ -41,7 +49,7 @@ const ProgressBar = () => {
       </div>
       <div className="text-new-matcherCategory">
         <p className="text-category">
-          CATEGORIA <strong>NEW MATCHER</strong>
+          CATEGORIA <strong>NEW MACHER</strong>
         </p>
       </div>
     </div>
