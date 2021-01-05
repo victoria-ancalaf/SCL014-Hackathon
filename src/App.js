@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ProgressBar from "./Components/Categories/ProgressBar";
 import FormPage from "./Pages/FormPage";
 import HomePage from './Pages/HomePage';
 
@@ -9,7 +10,8 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact>
-          <HomePage/>
+          {/* <HomePage/> */}
+         <ProgressBar />
         </Route>
       </Switch>
       <Switch>
