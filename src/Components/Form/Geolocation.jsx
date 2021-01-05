@@ -74,7 +74,7 @@ export default function Geolocation() {
           </Typography>
         </DialogContent>
         <DialogActions className={classesGeo.dialogBtnsClass}>
-          <Link to="/form7">
+          <Link to="/">
             <Button
               className={classesGeo.btnGeo}
               variant="contained"

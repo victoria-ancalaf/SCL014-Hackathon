@@ -51,9 +51,12 @@ const ModalThanks = () => {
             Recuerda que siempre pueder redefinir tu perfil, ingresando a "PERFIL" y luego "REDEFNIR".
         </MuiDialogContent>
         <MuiDialogActions className={classes.dialogBtnsClass}>
-        <MuiButton className={classes.customBtn} onClick={handleClose}>
-            Entendido
-        </MuiButton>
+          <Link to="/">
+            <MuiButton className={classes.customBtn}>
+              Entendido
+            </MuiButton>
+          </Link>
+        
         </MuiDialogActions>
             </Dialog>
             </ThemeProvider>

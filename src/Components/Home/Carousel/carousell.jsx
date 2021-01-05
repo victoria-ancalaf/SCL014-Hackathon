@@ -25,8 +25,8 @@ const Carousel = () => {
         infinite={true}
         disableDotsControls={true}
         disableButtonsControls={true}
-        // autoPlay={true}
-        // autoPlayInterval={5000}
+        autoPlay={true}
+        autoPlayInterval={5000}
       />
     </div>
   );
