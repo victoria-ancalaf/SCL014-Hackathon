@@ -11,7 +11,6 @@
   }
 
   .SelectDate {
-    height: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -25,7 +24,9 @@
     font-size: 25px;
     line-height: 28px;
     color: #181818;
+    padding-top: 160px;
     padding-bottom: 70px;
+    text-align: center;
   }
 
   .InputDate {
@@ -43,10 +44,15 @@
     font-weight: bold;
     font-size: 25px;
     text-align: center;
-    color: #D8D8D8;
+    color: #555555;
+    margin: 8px;
   }
 
   .input-box:focus {
     background-color: rgba(92, 62, 202, 0.7)
+  }
+
+  .navigation-component {
+    width: 100%;
   }
 }

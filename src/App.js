@@ -1,17 +1,15 @@
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import FormPage from "./Pages/FormPage";
-// import Age from './Components/Form/Age'; 
 import Competitive from './Components/Form/Competitive'
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Age /> */}
       <Competitive />
     <Router>
       <Switch>
