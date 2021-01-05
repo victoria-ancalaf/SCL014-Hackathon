@@ -9,6 +9,7 @@ import theme from "./Styles/tema";
 import "./Styles/modalWelcome.css";
 import {makeStyles} from '@material-ui/core/styles';
 import img from '../../Img/welcome.svg';
+import { Link } from "react-router-dom";
 
 const useStyle = makeStyles({
   dialogClass:{
@@ -52,9 +53,13 @@ const ModalWelcome = () => {
           </DialogContentText>
         </DialogContent>
         <DialogActions className={classes.dialogBtnsClass}>
-          <Button className={classes.customBtn}
-          onClick={handleClose}>Ahora no puedo</Button>
+          <Link to="/">
+            <Button className={classes.customBtn}
+            onClick={handleClose}>Ahora no puedo</Button>
+          </Link>
+          <Link to="/form1">
           <Button className={classes.customBtn} onClick={handleClose}>Si, dale!</Button>
+          </Link>
         </DialogActions>
       </Dialog>
     </ThemeProvider>

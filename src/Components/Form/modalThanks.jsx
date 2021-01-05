@@ -10,6 +10,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import imgthks from '../../Img/entretencion.svg';
 import MuiButton from '@material-ui/core/IconButton';
 import { isWidthDown } from '@material-ui/core';
+import { Link } from "react-router-dom";
 
 const useStyle = makeStyles({
   // dialogClass:{
