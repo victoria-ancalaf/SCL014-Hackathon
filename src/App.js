@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ProgressBar from "./Components/Categories/ProgressBar";
 import FormPage from "./Pages/FormPage";
 import HomePage from './Pages/HomePage';
 import Categories from './Pages/Categories';
