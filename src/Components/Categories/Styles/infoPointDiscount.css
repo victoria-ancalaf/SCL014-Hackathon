@@ -1,0 +1,19 @@
+.containerInfoPointDiscount{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top:22px;
+    width: 100%;
+    height: 41px;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnMACHPoints, .btnDiscount{
+    text-align: center;
+    background: #5C3ECA;
+    color:#ffffff;
+    font-size: 14.5px; 
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    padding:10px 15px;
+    width: auto;
+}
