@@ -24,6 +24,7 @@ const Preferences = () => {
   const classbtns = check === true ? 'container input:checked' : 'container'
   return (
     <div className='containerPreferences'>
+      <div className="AgeHeader"></div>
       <div className="containerTextPreferences">
         <p className='titlePreferences'>Escoge tus intereses(como mínimo 3)</p>
         <p className='textPreferences'>Y recibe recomendaciones personalizadas</p>
