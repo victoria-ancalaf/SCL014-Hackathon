@@ -1,6 +1,6 @@
-import Navigation from "../Form/Navigation";
 import React, { Fragment } from "react";
 import "./Styles/Competitive.css";
+import { Link } from "react-router-dom";
 
 const Competitive = () => {
   return (
@@ -20,8 +20,19 @@ const Competitive = () => {
             <button className="btn-Competitive">Lo justo y necesario</button>
           </div>
         </div>
-        <div className="box-navigator">
-          <Navigation />
+        <div>
+        <div className="navigation-container">
+      <div>
+        <Link to="/form4">
+        <button className="navigation-btn">{"< "}Atrás</button>
+        </Link>
+      </div>
+      <div>
+        <Link to="/form6">
+        <button className="navigation-btn">Siguiente{" >"}</button>
+        </Link>
+      </div>
+    </div>
         </div>
       </div>
     </Fragment>

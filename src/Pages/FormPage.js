@@ -5,6 +5,8 @@ import ModalWelcome from "../Components/Form/modalWelcome";
 import Preferences from "../Components/Form/Preferences";
 import Age from "../Components/Form/Age";
 import Gender from "../Components/Form/Gender";
+import Competitive from '../Components/Form/Competitive'
+import Time from '../Components/Form/Time'
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 const FormPage = () => {
@@ -33,11 +35,21 @@ const FormPage = () => {
         </Switch>
         <Switch>
           <Route path="/form4">
-            <Geolocation />
+            <Time />
           </Route>
         </Switch>
         <Switch>
           <Route path="/form5">
+            <Competitive />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/form6">
+            <Geolocation />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/form7">
             <ModalThanks/>
           </Route>
         </Switch>
