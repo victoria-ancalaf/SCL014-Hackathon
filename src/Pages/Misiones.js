@@ -9,7 +9,7 @@ const Misiones = () => {
         <button className="saldo-btn">Misiones Temporales</button>
         <button className="saldo-btn">Misiones permanentes</button>
       </section>
-      -
+      
     </div>
   );
 };
