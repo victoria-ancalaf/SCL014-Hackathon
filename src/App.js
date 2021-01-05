@@ -4,17 +4,21 @@ import {
   Route
 } from "react-router-dom";
 import FormPage from "./Pages/FormPage";
-import Competitive from './Components/Form/Competitive'
+import HomePage from './Pages/HomePage';
 
 
 function App() {
   return (
     <div className="App">
-      <Competitive />
     <Router>
       <Switch>
         <Route path="/formulario">
           <FormPage />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/">
+          <HomePage/>
         </Route>
       </Switch>
     </Router>
