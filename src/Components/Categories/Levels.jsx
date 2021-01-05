@@ -17,7 +17,7 @@ export const Levels = () => {
                 </p>
             </div>
             <div className='category'>
-            <Link to="/categorias/newmacher">
+            <Link to="/gana/newmacher">
             <div className='new'>
                 <h3 className='cat-title'>New Macher</h3>
                 <p className='cat-txt'>4 Beneficios disponibles</p>
