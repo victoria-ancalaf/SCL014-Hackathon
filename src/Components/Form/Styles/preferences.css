@@ -1,0 +1,60 @@
+.containerPreferences{
+    display: flex;
+    flex-flow: column nowrap;
+    margin:8% 12%;
+}
+.titlePreferences, .textPreferences{
+    font-size: 16px;
+    font-weight:bold;
+    color:#181818;
+}
+.textPreferences{
+   font-size:13.8px;
+   color: #999999;;
+}
+.containerTextPreferences{
+    padding-bottom: 5%;
+}
+.containerCheckBoxs{
+    display: flex;
+    flex-flow: row wrap;
+}
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    border: 1px solid #D8D8D8;
+    padding:3.5%;
+    border-radius: 5px;
+    font-size:14.5px;
+    font-weight:bold;
+    color:#555555;
+    margin:2.5%;
+    cursor: pointer;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.container:hover{
+    background-color: #D8D8D8;
+    border: 1px solid #5C3ECA;
+}
+.container input:checked{
+    border: 1px solid #5C3ECA;
+    background-color: #D8D8D8;
+}
+.container:active{
+    border: 1px solid #5C3ECA;
+    background-color: #D8D8D8;
+}
+.containerEmoji{
+    width:20px;
+    height:15px;
+    margin-right:2%;
+}
+.emoji{
+    width: 100%;
+}
