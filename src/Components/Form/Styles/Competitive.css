@@ -15,9 +15,20 @@
 
 .btn-Competitive {
   background-color: #ffff;
-  height: 34px;
+ 
   color: #555555;
   font-weight: 500;
+  width: 181px;
+  height: 49px;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  color: #555555;
+  margin: 22px 129px 0px;
 }
 
 .box-btn {
