@@ -15,7 +15,7 @@ const Gender = () => {
         <button className="gender-btn">Masculino</button>
         <button className="gender-btn">No binario</button>
       </section>
-      <div>
+      <div className="gender-navigation">
         <div className="navigation-container">
           <div>
               <Link to="/form1">

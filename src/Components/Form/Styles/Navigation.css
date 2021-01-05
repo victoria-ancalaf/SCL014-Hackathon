@@ -2,7 +2,7 @@
   .navigation-container {
     display: flex;
     justify-content: space-between;
-    padding: 52px;
+    padding: 0px 52px 66px;
   }
 
   .nav-forw {
