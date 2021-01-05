@@ -8,7 +8,7 @@ export const Dashboard = () => {
     return(
         <Fragment>
             <div className='div1'>
-            <img src={img1} className='iconbill'></img>
+            <img src={img1} alt='iconbill' className='iconbill'></img>
                 <div className='div2'>
                 <h1 className='myTitle'>
                 Equipo MACH
@@ -25,7 +25,7 @@ export const Dashboard = () => {
                 </div>
             </div>
             <div className='div1'>
-            <img src={img} className='iconpers'></img>
+            <img src={img} alt='iconperson' className='iconpers'></img>
                 <div className='div2'>
                 <h1 className='myTitle'>
                 Equipo MACH
