@@ -1,3 +1,4 @@
+import Navigation from "../Form/Navigation";
 import React, { Fragment } from "react";
 import "./Styles/Competitive.css";
 
@@ -18,6 +19,9 @@ const Competitive = () => {
           <div>
             <button className="btn-Competitive">Lo justo y necesario</button>
           </div>
+        </div>
+        <div className="box-navigator">
+          <Navigation />
         </div>
       </div>
     </Fragment>
