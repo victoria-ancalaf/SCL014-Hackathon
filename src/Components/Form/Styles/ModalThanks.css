@@ -1,6 +1,8 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 .dialogClass{
     display: flex;
     width: 80%;
+    font-family: "Nunito", sans-serif;
 }
 .titleT{
     text-align: center;
@@ -9,4 +11,5 @@
     align-self: center;
     width: 5vw;
     margin: 5%;
+}
 }
