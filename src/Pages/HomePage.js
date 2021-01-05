@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from '../Components/Home/carousell';
+import Carousel from '../Components/Home/Carousel/carousell';
 
 const HomePage = () => {
     return(
