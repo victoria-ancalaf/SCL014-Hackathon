@@ -23,7 +23,7 @@
     }
     .new{ 
         background-color: #18D5CA;
-        padding-bottom: 8%;
+        padding-bottom: 20%;
     }
     .true{ 
         background-color: #9B55FF;
@@ -35,6 +35,10 @@
         border-radius: 8px; 
         color: #FFFFFF;
         margin: 0.5% 0.5% 1% 1%;
+    }
+    a, a:after, a:hover, a:visited, a:active{
+        text-decoration: none;
+        outline: none;
     }
     .walk, .run, .super{
         position: absolute;
