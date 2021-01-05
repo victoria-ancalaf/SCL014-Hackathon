@@ -1,10 +1,14 @@
 import React from "react";
-import Carousel from '../Components/Home/carousell';
+import Saldo from "../Components/Home/Saldo";
+import Carousel from "../Components/Home/carousell";
 
 const HomePage = () => {
-    return(
-        <Carousel/>
-    );
-}
+  return (
+    <div>
+      <Saldo />
+      <Carousel />
+    </div>
+  );
+};
 
 export default HomePage;
