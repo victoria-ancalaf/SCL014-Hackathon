@@ -13,16 +13,8 @@
   margin-left: 9vh;
 }
 
-.btn-Competitive {
-  background-color: transparent;
-  border: 1px solid #d8d8d8;
-  border-radius: 5px;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  text-align: center;
-  color: #555555;
-  height: 41px;
+.btn-competitive {
+  background-color: #ffff;
 }
 
 .box-btn {
