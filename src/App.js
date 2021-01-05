@@ -5,12 +5,14 @@ import {
   Link
 } from "react-router-dom";
 import FormPage from "./Pages/FormPage";
-import Age from './Components/Form/Age'
+// import Age from './Components/Form/Age'; 
+import Competitive from './Components/Form/Competitive'
 
 function App() {
   return (
     <div className="App">
-      <Age />
+      {/* <Age /> */}
+      <Competitive />
     <Router>
       <Switch>
         <Route path="/formulario">
