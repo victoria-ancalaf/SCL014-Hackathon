@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import FormPage from "./Pages/FormPage";
 import HomePage from './Pages/HomePage';
-
+import Categories from './Pages/Categories';
 
 function App() {
   return (
@@ -15,6 +15,11 @@ function App() {
       <Switch>
         <Route path="/form1" exact>
           <FormPage />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/categorias" exact>
+          <Categories/>
         </Route>
       </Switch>
  
