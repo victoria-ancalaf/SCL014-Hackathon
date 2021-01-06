@@ -4,10 +4,15 @@ import HomePage from "./Pages/HomePage";
 import Categories from "./Pages/Categories";
 import Misiones from "./Pages/Misiones";
 import NewMacher from "./Components/Categories/NewMacher";
+import TrueMacher from './Components/Categories/TrueMacher';
+import MachLover from './Components/Categories/MachLover';
+import CabifyMission from './Components/Missions/CabifyMission';
+import Information from "./Pages/Information";
 import TrueMacher from "./Components/Categories/TrueMacher";
 import MachLover from "./Components/Categories/MachLover";
 import Information from "./Pages/Information";
 import Discount from "./Pages/Discount";
+
 
 function App() {
   return (
@@ -49,6 +54,8 @@ function App() {
           </Route>
         </Switch>
         <Switch>
+          <Route path="/misiones/cabify" exact>
+            <CabifyMission/>
           <Route path="/informacion" exact>
             <Information />
           </Route>

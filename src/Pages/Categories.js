@@ -9,6 +9,7 @@ import Misiones from "./Misiones";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProgressBar from "../Components/Categories/ProgressBar";
 import Header from '../Components/Categories/Header';
+import CabifyMission from '../Components/Missions/CabifyMission';
 
 const Categories = () => {
   return (
@@ -21,6 +22,11 @@ const Categories = () => {
         <Switch>
           <Route path="/misiones" exact>
             <Misiones />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/misiones/cabify" exact>
+            <CabifyMission/>
           </Route>
         </Switch>
         <Switch>
