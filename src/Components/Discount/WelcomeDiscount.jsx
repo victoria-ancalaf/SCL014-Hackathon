@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import HeaderWelcomeDiscount from './HeaderWelcomeDiscount'
-import '../Categories/Styles/WelcomeDiscount.css'
+import HeaderWelcomeDiscount from './HeaderWelcomeDiscount';
+import './Styles/WelcomeDiscount.css'
 
 const WelcomeDiscount = () => {
     return (
