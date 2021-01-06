@@ -4,15 +4,12 @@ import HomePage from "./Pages/HomePage";
 import Categories from "./Pages/Categories";
 import Misiones from "./Pages/Misiones";
 import NewMacher from "./Components/Categories/NewMacher";
-import TrueMacher from './Components/Categories/TrueMacher';
-import MachLover from './Components/Categories/MachLover';
-import CabifyMission from './Components/Missions/CabifyMission';
-import Information from "./Pages/Information";
 import TrueMacher from "./Components/Categories/TrueMacher";
 import MachLover from "./Components/Categories/MachLover";
+import CabifyMission from "./Components/Missions/CabifyMission";
 import Information from "./Pages/Information";
-
 import Discount from "./Pages/Discount";
+import MisionFriend from "./Components/Missions/MisionFriend";
 
 
 function App() {
@@ -56,14 +53,17 @@ function App() {
         </Switch>
         <Switch>
           <Route path="/misiones/cabify" exact>
-            <CabifyMission/>
+            <CabifyMission />
+          </Route>
+        </Switch>
+        <Switch>
           <Route path="/informacion" exact>
-            <Information/>
+            <Information />
           </Route>
         </Switch>
         <Switch>
           <Route path="/misionamigo" exact>
-            <MisionFriend/>
+            <MisionFriend />
           </Route>
         </Switch>
         <Switch>
