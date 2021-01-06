@@ -1,0 +1,96 @@
+.headerLevels{
+    display: flex;
+    width: 100%;
+    height: 41px;
+    background-color:#580CE5;   
+    color:#ffff;
+    align-items: center;
+    justify-content: space-between;
+    padding:0% 3%;
+}
+.containerMasterLevels{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.containerCardLevel{
+    display: flex;
+    align-items:center;
+    flex-flow:column nowrap;
+    margin: 10% 0% 0% 3%;
+    border-radius: 15px;
+    height: auto;
+    width: 100vw;
+}
+.headCardLevel1, .headCardLevel2, .headCardLevel3{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    background-color: #18D5CA;
+    border-radius: 15px 15px 0px 0px;
+}
+.headCardLevel2{
+    background-color:#9B55FF ;
+}
+.headCardLevel3{
+    background-color: #EE9B00;
+}
+.containerTitle{
+    display: flex;
+    padding: 0% 0% 2% 8%;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    color:#ffff;
+}
+.imgLevel{
+    width: 100%;
+}
+.containerImgLevelsWoman{
+    height: 36px ;
+    width: 36px;
+}
+.containerImgLevelsSuperHero{
+    height: 24px;
+    width: 22px;
+}
+.containerImgLock{
+    height: 16px;
+    width: 20px;
+    align-self: center;
+}
+.bodyCardLevel{
+    padding: 5% 8% 5% 8%;
+    font-size: 16px;
+    color:#9999;
+}
+.list1::marker {
+    color: #18D5CA;
+}
+.list2::marker{
+    color:#9B55FF ;
+}
+.list3::marker{
+    color:#EE9B00;
+}
+.bottomCardLevel{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:5%;
+}
+.btnCardLevel{
+    background: #5C3ECA;
+    border: none;
+    border-radius: 5px;
+    color:#ffff;
+    height: 40px;
+    padding: 0% 5%;
+    font-weight: bold;
+    font-size:14.5px;
+}
