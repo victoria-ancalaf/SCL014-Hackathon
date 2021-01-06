@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Components/Categories/Styles/HeaderWelcomeDiscount.css'
+import './Styles/HeaderWelcomeDiscount.css'
 
 const HeaderWelcomeDiscount = () => {
     return (
