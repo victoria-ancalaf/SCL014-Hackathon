@@ -14,7 +14,7 @@ const Time = () => {
         <button className="btn-time">Me estresa</button>
         <button className="btn-time">No sé</button>
       </div>
-      <div>
+      <div className="navigation-time">
         <div className="navigation-container">
           <div>
             <Link to="/form3">

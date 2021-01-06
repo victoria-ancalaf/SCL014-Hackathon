@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 30px;
   }
 
   .btn-mission {
@@ -19,10 +20,13 @@
     cursor: pointer;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 15px;
   }
 
   .mision-img {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15%;
     height: 100%;
   }
@@ -30,7 +34,12 @@
   .title-mission {
     width: 85%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+  }
+
+  .points-title {
+    display: flex;
+    justify-content: space-around;
   }
 
   .mission-p-dark {
@@ -38,6 +47,7 @@
     font-weight: 600;
     font-size: 16px;
     color: #333333;
+    padding: 10px 0px 2px 0px;
   }
 
   .mission-p-light {
@@ -45,5 +55,6 @@
     font-weight: bold;
     font-size: 13.8px;
     color: #999999;
+    padding: 2px 0px 2px 0px;
   }
 }
