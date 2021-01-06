@@ -6,6 +6,13 @@ const themeGeo = createMuiTheme({
       main: "#5C3ECA",
     },
   },
+  shape:
+  {
+    borderRadius:25  
+  },
+  spacing: {
+      mui: false
+  },
 });
 
 export default themeGeo;
