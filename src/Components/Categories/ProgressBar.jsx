@@ -28,6 +28,7 @@ const ProgressBar = () => {
           styles={buildStyles({
             pathColor:'#00EDDF',
             trailColor: '#ffff',
+            pathTransitionDuration: 0.5,
           })}
          strokeWidth={12}
         
