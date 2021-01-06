@@ -17,9 +17,10 @@ const Permanentes = ({ visible }) => {
             <img src={Truck} alt="Viaja" />
           </div>
           <div className="title-mission">
+            <div className="points-title">
             <p className="mission-p-dark">Viaja en Cabify</p>
             <p className="mission-p-dark">+5 pts</p>
-
+            </div>
             <p className="mission-p-light">
               Queremos que viajes seguro, es por...
             </p>
@@ -30,9 +31,10 @@ const Permanentes = ({ visible }) => {
             <img src={Card} alt="Gasta" />
           </div>
           <div className="title-mission">
+          <div className="points-title">
             <p className="mission-p-dark">Gasta sobre $20.000</p>
             <p className="mission-p-dark">+20 pts</p>
-
+</div>
             <p className="mission-p-light">
               Por este mes gasta sobre $20.000...
             </p>
@@ -43,9 +45,10 @@ const Permanentes = ({ visible }) => {
             <img src={Shopping} alt="Pide" />
           </div>
           <div className="title-mission">
+          <div className="points-title">
             <p className="mission-p-dark">Pide un McCombo</p>
             <p className="mission-p-dark">+5 pts</p>
-
+</div>
             <p className="mission-p-light">
               Durante este mes pide una promoci...
             </p>
@@ -56,9 +59,10 @@ const Permanentes = ({ visible }) => {
             <img src={Pc} alt="Suscribete" />
           </div>
           <div className="title-mission">
+          <div className="points-title">
             <p className="mission-p-dark">Suscríbete a Spotify</p>
             <p className="mission-p-dark">+10 pts</p>
-
+</div>
             <p className="mission-p-light">
               Por este mes suscríbete a Spotify y...
             </p>
