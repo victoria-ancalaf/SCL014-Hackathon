@@ -4,8 +4,7 @@
     flex-direction: column;
     height: 62vh;
     padding-top: 14vh;
-    width: 93vw;
-    margin-left: 2vh;
+    width: 100%;
   }
 
   .AgeHeader {
@@ -67,6 +66,6 @@
   }
 
   .competitive-navigation {
-    padding-top: 240px;
+    padding-top: 225px;
   }
 }
