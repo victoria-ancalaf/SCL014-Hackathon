@@ -61,6 +61,8 @@
     height: 16px;
     width: 20px;
     align-self: center;
+    margin-left: 38%;
+    margin-top: 8%;
 }
 .bodyCardLevel{
     padding: 5% 8% 5% 8%;
@@ -82,7 +84,7 @@
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin-top:5%;
+    padding-top: 5%;
 }
 .btnCardLevel{
     background: #5C3ECA;
@@ -93,4 +95,12 @@
     padding: 0% 5%;
     font-weight: bold;
     font-size:14.5px;
+}
+
+.back-categories {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
 }

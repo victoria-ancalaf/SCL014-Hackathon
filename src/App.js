@@ -2,7 +2,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import FormPage from "./Pages/FormPage";
 import HomePage from './Pages/HomePage';
 import Categories from './Pages/Categories';
-import Misiones from './Pages/Misiones'
+import Misiones from './Pages/Misiones';
+import NewMacher from "./Components/Categories/NewMacher";
+import TrueMacher from './Components/Categories/TrueMacher';
+import MachLover from './Components/Categories/MachLover';
 
 function App() {
   return (
@@ -28,7 +31,21 @@ function App() {
           <Misiones/>
         </Route>
       </Switch>
- 
+      <Switch>
+          <Route path="/gana/newmacher" exact>
+            <NewMacher/>
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/gana/truemacher" exact>
+            <TrueMacher/>
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/gana/machlover" exact>
+            <MachLover/>
+          </Route>
+        </Switch>
     </Router>
     </div>
   );
