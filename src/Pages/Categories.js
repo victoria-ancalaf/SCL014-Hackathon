@@ -2,6 +2,8 @@ import React from "react";
 import MisionPoints from "../Components/Categories/MisionPoint";
 import InfoPointDiscount from "../Components/Categories/infoPointDiscount";
 import NewMacher from "../Components/Categories/NewMacher";
+import TrueMacher from '../Components/Categories/TrueMacher';
+import MachLover from '../Components/Categories/MachLover';
 import Levels from "../Components/Categories/Levels";
 import Misiones from "./Misiones";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -12,24 +14,31 @@ const Categories = () => {
     <div>
       <ProgressBar />
       <MisionPoints />
+      <Levels />
       <Router>
+      <InfoPointDiscount />
         <Switch>
           <Route path="/misiones" exact>
-            <Misiones />
+            <Misiones/>
           </Route>
         </Switch>
         <Switch>
           <Route path="/gana/newmacher" exact>
-            <NewMacher />
+            <NewMacher/>
           </Route>
         </Switch>
         <Switch>
-          <Route path="/gana" exact>
-            <Levels />
+          <Route path="/gana/truemacher" exact>
+            <TrueMacher />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/gana/machlover" exact>
+            <MachLover />
           </Route>
         </Switch>
       </Router>
-      <InfoPointDiscount />
+      
     </div>
   );
 };

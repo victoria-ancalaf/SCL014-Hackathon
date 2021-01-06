@@ -2,12 +2,15 @@ import React, { Fragment } from "react";
 import woman from "../../Img/woman.svg";
 import unlock from "../../Img/unlock.svg";
 import "./Styles/NewMacher.css";
+import { Link } from 'react-router-dom';
 
 const NewMacher = () => {
   return (
     <Fragment>
       <div className="headerLevels">
-        <p> {"<"} </p>
+        <Link to="/gana">
+        <div className="back-categories">{"<"}</div>
+        </Link>
         <p>Nivel 1</p>
         <p> </p>
       </div>
@@ -19,10 +22,10 @@ const NewMacher = () => {
               <div className="containerImgLevelsWoman">
                 <img className="imgLevel" src={woman} alt="woman" />
               </div>
-              <div className="containerImgLock">
+            </div>
+            <div className="containerImgLock">
                 <img className="imgLevel" src={unlock} alt="unlock" />
               </div>
-            </div>
           </div>
           <div className="bodyCardLevel">
             <p>

@@ -1,13 +1,16 @@
 import React, { Fragment } from "react";
 import woman from "../../Img/superhero.svg";
 import lock from "../../Img/lock.svg";
+import {Link} from 'react-router-dom';
 import "./Styles/NewMacher.css";
 
 const MachLover = () => {
   return (
     <Fragment>
       <div className="headerLevels">
-        <p> {"<"} </p>
+      <Link to="/gana">
+        <div className="back-categories">{"<"}</div>
+        </Link>
         <p>Nivel 3</p>
         <p> </p>
       </div>
@@ -19,10 +22,10 @@ const MachLover = () => {
               <div className="containerImgLevelsSuperHero">
                 <img className="imgLevel" src={woman} alt="woman" />
               </div>
-              <div className="containerImgLock">
+            </div>
+            <div className="containerImgLock">
                 <img className="imgLevel" src={lock} alt="lock" />
               </div>
-            </div>
           </div>
           <div className="bodyCardLevel">
             <p>

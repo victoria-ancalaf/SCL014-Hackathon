@@ -6,6 +6,7 @@
     height: 41px;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 5%;
 }
 .btnMACHPoints, .btnDiscount{
     text-align: center;
