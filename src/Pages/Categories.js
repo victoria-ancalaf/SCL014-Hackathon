@@ -10,15 +10,17 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProgressBar from "../Components/Categories/ProgressBar";
 import Header from '../Components/Categories/Header';
 import CabifyMission from '../Components/Missions/CabifyMission';
+import MenuCategories from '../Components/Categories/MenuCategories';
 
 const Categories = () => {
   return (
     <div>
-      <ProgressBar />
-      <MisionPoints />
-      <Levels />
+      <ProgressBar/>
+      <MisionPoints/>
+      <Levels/>
+      <InfoPointDiscount/>
       <Router>
-        <InfoPointDiscount />
+      <MenuCategories/> 
         <Switch>
           <Route path="/misiones" exact>
             <Misiones />
