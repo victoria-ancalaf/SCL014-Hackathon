@@ -32,6 +32,9 @@
     border-radius: 15px 15px 0px 0px;
     font-weight: bold;
 }
+.levelbold{
+    font-weight: 800;
+}
 .headCardLevel2{
     background-color:#9B55FF ;
 }
@@ -65,16 +68,27 @@
     margin-left: 38%;
     margin-top: 8%;
 }
-.bodyCardLevel{
+.bodyCardLevel, .bodyCardLevel2, .bodyCardLevel3{
     padding: 5% 8% 5% 8%;
     font-size: 16px;
     color:#999999;
+    border: 1px solid #18D5CA;
+    border-radius: 0px 0px 15px 15px;
+}
+.bodyCardLevel{
+    border: 1px solid #18D5CA;
+}
+.bodyCardLevel2{
+    border: 1px solid #9B55FF;
+}
+.bodyCardLevel3{
+    border: 1px solid #EE9B00;
 }
 .list1::marker {
     color: #18D5CA;
 }
 .list2::marker{
-    color:#9B55FF ;
+    color:#9B55FF;
 }
 .list3::marker{
     color:#EE9B00;
@@ -86,6 +100,7 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 5%;
+    margin-top: 15%;
 }
 .btnCardLevel{
     background: #5C3ECA;
@@ -96,6 +111,19 @@
     padding: 0% 5%;
     font-weight: bold;
     font-size:14.5px;
+}
+.btnCardLevelblck{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: #D8D8D8;
+    border-radius: 5px;
+    color:#999999;
+    height: 40px;
+    padding: 0% 5% 0% 5%;
+    font-weight: bold;
+    font-size:14.5px; 
+    cursor: no-drop;
 }
 
 .back-categories {
