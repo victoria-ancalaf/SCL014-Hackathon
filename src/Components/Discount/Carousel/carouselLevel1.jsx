@@ -31,7 +31,7 @@ const items = [
 
 const CarouselLevel1 = () => {
   return (
-    <div className="">
+    <div className="containerCarouselDiscLevel1">
       <AliceCarousel
         mouseTracking
         items={items}
