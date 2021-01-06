@@ -1,51 +1,53 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import FormPage from "./Pages/FormPage";
-import HomePage from './Pages/HomePage';
-import Categories from './Pages/Categories';
-import Misiones from './Pages/Misiones';
+import HomePage from "./Pages/HomePage";
+import Categories from "./Pages/Categories";
+import Misiones from "./Pages/Misiones";
 import NewMacher from "./Components/Categories/NewMacher";
-import TrueMacher from './Components/Categories/TrueMacher';
-import MachLover from './Components/Categories/MachLover';
+import TrueMacher from "./Components/Categories/TrueMacher";
+import MachLover from "./Components/Categories/MachLover";
 import Information from "./Pages/Information";
-import MisionFriend from './Components/Missions/MisionFriend';
+
+import Discount from "./Pages/Discount";
+
 
 function App() {
   return (
     <div className="App">
-    <Router>
-      <Switch>
-        <Route path="/" exact>
-          <HomePage/>
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/form1" exact>
-          <FormPage />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/gana" exact>
-          <Categories/>
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/misiones" exact>
-          <Misiones/>
-        </Route>
-      </Switch>
-      <Switch>
+      <Router>
+        <Switch>
+          <Route path="/" exact>
+            <HomePage />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/form1" exact>
+            <FormPage />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/gana" exact>
+            <Categories />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/misiones" exact>
+            <Misiones />
+          </Route>
+        </Switch>
+        <Switch>
           <Route path="/gana/newmacher" exact>
-            <NewMacher/>
+            <NewMacher />
           </Route>
         </Switch>
         <Switch>
           <Route path="/gana/truemacher" exact>
-            <TrueMacher/>
+            <TrueMacher />
           </Route>
         </Switch>
         <Switch>
           <Route path="/gana/machlover" exact>
-            <MachLover/>
+            <MachLover />
           </Route>
         </Switch>
         <Switch>
@@ -58,7 +60,12 @@ function App() {
             <MisionFriend/>
           </Route>
         </Switch>
-    </Router>
+        <Switch>
+          <Route path="/descuentos" exact>
+            <Discount />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
