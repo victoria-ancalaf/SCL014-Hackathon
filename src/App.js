@@ -7,6 +7,7 @@ import NewMacher from "./Components/Categories/NewMacher";
 import TrueMacher from './Components/Categories/TrueMacher';
 import MachLover from './Components/Categories/MachLover';
 import Information from "./Pages/Information";
+import MisionFriend from './Components/Missions/MisionFriend';
 
 function App() {
   return (
@@ -49,7 +50,12 @@ function App() {
         </Switch>
         <Switch>
           <Route path="/informacion" exact>
-            <Information />
+            <Information/>
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/misionamigo" exact>
+            <MisionFriend/>
           </Route>
         </Switch>
     </Router>
