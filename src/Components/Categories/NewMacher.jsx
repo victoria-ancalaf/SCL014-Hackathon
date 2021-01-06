@@ -40,7 +40,9 @@ const NewMacher = () => {
             </ul>
           </div>
           <div className="bottomCardLevel">
+            <Link to="/abrircaja">
             <button className='btnCardLevel'>Activar mi caja</button>
+            </Link>
             <button  className='btnCardLevel'>Mis descuentos</button>
           </div>
         </div>
