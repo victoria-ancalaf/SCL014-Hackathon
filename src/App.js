@@ -6,6 +6,8 @@ import Misiones from './Pages/Misiones';
 import NewMacher from "./Components/Categories/NewMacher";
 import TrueMacher from './Components/Categories/TrueMacher';
 import MachLover from './Components/Categories/MachLover';
+import CabifyMission from './Components/Missions/CabifyMission';
+
 
 function App() {
   return (
@@ -44,6 +46,11 @@ function App() {
         <Switch>
           <Route path="/gana/machlover" exact>
             <MachLover/>
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/misiones/cabify" exact>
+            <CabifyMission/>
           </Route>
         </Switch>
     </Router>
