@@ -20,6 +20,8 @@ const useStyle = makeStyles({
   },
   dialogBtnsClass: {
     justifyContent: "center",
+    paddingBottom: 60,
+    paddingTop: 66,
   },
   btnGeo: {
     borderRadius: 5,
@@ -30,6 +32,9 @@ const useStyle = makeStyles({
     borderStyle: "solid",
     borderColor: "#D8D8D8",
   },
+  type: {
+    color: "#999999",
+  }
 });
 
 const DialogContent = withStyles((theme) => ({
@@ -67,7 +72,7 @@ export default function Geolocation() {
         </div>
         <DialogContent>
           <h3 className="title-Geo"> Vamos donde tu vayas</h3>
-          <Typography gutterBottom>
+          <Typography gutterBottom className={classesGeo.type}>
             Queremos ofrecerte los mejores servicios en función de tu ubicación,
             por lo que es necesario acceder a tu ubicación incluso cuando la
             aplicación esta cerrada o no esta en uso.

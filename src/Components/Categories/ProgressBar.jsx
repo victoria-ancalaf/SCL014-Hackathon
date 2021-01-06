@@ -1,5 +1,5 @@
-import { CenterFocusStrong } from "@material-ui/icons";
-import React, { Fragment } from "react";
+// import { CenterFocusStrong } from "@material-ui/icons";
+import React from "react";
 import '../Categories/Styles/ProgressBar.css'
 import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
 import { makeStyles} from "@material-ui/core/styles";
@@ -28,6 +28,7 @@ const ProgressBar = () => {
           styles={buildStyles({
             pathColor:'#00EDDF',
             trailColor: '#ffff',
+            pathTransitionDuration: 0.5,
           })}
          strokeWidth={12}
         
