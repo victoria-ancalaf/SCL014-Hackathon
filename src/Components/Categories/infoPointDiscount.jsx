@@ -8,7 +8,11 @@ const InfoPointDiscount = () => {
             <Link to="/informacion">
             <button className="btnMACHPoints">Información MACH Points</button>
             </Link>
+            <div>
+            <Link to="/descuentos">
             <button className="btnDiscount">Ver descuentos</button>
+            </Link>
+            </div>
         </div>
     );
 }
