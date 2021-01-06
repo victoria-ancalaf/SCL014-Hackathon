@@ -11,7 +11,7 @@ const MachLover = () => {
       <Link to="/gana">
         <div className="back-categories">{"<"}</div>
         </Link>
-        <p>Nivel 3</p>
+        <p className='levelbold'>Nivel 3</p>
         <p> </p>
       </div>
       <div className="containerMasterLevels">
@@ -27,7 +27,7 @@ const MachLover = () => {
                 <img className="imgLevel" src={lock} alt="lock" />
               </div>
           </div>
-          <div className="bodyCardLevel">
+          <div className="bodyCardLevel3">
             <p>
             Perteneces a esta categoría si cuentas con  200 MACH Points. Desde este nivel, empiezas a juntar nuevamente puntos, los cuales puedes transformar en dinero. En esta categoria accedes a:
             </p>
@@ -40,6 +40,10 @@ const MachLover = () => {
               <li className='list3'>Devoluciones de dinero, por compras específicas.</li>
               <li className='list3'>Descuentos personalizados, en base a tus preferencias.</li>
             </ul>
+            <div className="bottomCardLevel">
+            <div className='btnCardLevelblck'>Activar mi caja</div>
+            <div  className='btnCardLevelblck'>Mis descuentos</div>
+          </div>
           </div>
         </div>
       </div>
