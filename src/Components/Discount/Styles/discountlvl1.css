@@ -3,15 +3,14 @@
     flex-flow: column nowrap;
     justify-content: center;
     color:#ffffff;
-    background-color:#18D5CA;
-    padding: 2% 0% 2% 0%;
-   
+    padding: 2% 0% 20% 0%;
 }
 .topCardDiscountLvl1{
     display:flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+    background-color:#18D5CA;
     padding:3% 0% 2% 0%;
 }
 .titleTextCardlvl1{
@@ -28,5 +27,12 @@
     height: 24px;
 }
 .photoCarouselLvl1{
-    width:60%;
+    width:80%;
 }
+.containerFakeImg{
+    width: 100%;
+}
+.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active{
+    background-color:#5C3ECA;
+}
+

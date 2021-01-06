@@ -2,6 +2,7 @@ import React from "react";
 import unlock from '../../Img/unlock.svg';
 import CarouselLevel1 from "./Carousel/carouselLevel1";
 import './Styles/discountlvl1.css';
+import fake from '../../Img/fake.svg';
 
 const DiscountLvl1 = () => {
   return (
@@ -16,6 +17,10 @@ const DiscountLvl1 = () => {
         </div> 
       </div>
       <CarouselLevel1 />
+      <div className='containerFakeImg'>
+        <img className='fakeImg' src={fake} alt='fake'/>
+      </div>
+   
     </div>
   );
 };
