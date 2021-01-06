@@ -2,6 +2,7 @@
     .welc-cont{
         font-family: 'Nunito';
         margin: 7% 4%;
+        color:#3333;
     }
     .title-welc{
         font-size:18px;
@@ -15,7 +16,6 @@
         font-family: 'Nunito';
         width: 100vw;
         justify-content: space-around;
-        /* color: #333333; */
         padding-bottom: 15%;
         color: #FFFFFF;
     }
