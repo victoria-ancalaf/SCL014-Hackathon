@@ -10,6 +10,7 @@ import CabifyMission from "./Components/Missions/CabifyMission";
 import Information from "./Pages/Information";
 import Discount from "./Pages/Discount";
 import MisionFriend from "./Components/Missions/MisionFriend";
+import Points from "./Components/Categories/Points";
 
 
 function App() {
@@ -69,6 +70,11 @@ function App() {
         <Switch>
           <Route path="/descuentos" exact>
             <Discount />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/puntos" exact>
+           <Points />
           </Route>
         </Switch>
       </Router>
