@@ -6,8 +6,12 @@ import Misiones from './Pages/Misiones';
 import NewMacher from "./Components/Categories/NewMacher";
 import TrueMacher from './Components/Categories/TrueMacher';
 import MachLover from './Components/Categories/MachLover';
+<<<<<<< HEAD
 import CabifyMission from './Components/Missions/CabifyMission';
 
+=======
+import Information from "./Pages/Information";
+>>>>>>> 2344cd203b96c976a834ad49f7e4e874495e4fbf
 
 function App() {
   return (
@@ -49,8 +53,13 @@ function App() {
           </Route>
         </Switch>
         <Switch>
+<<<<<<< HEAD
           <Route path="/misiones/cabify" exact>
             <CabifyMission/>
+=======
+          <Route path="/informacion" exact>
+            <Information />
+>>>>>>> 2344cd203b96c976a834ad49f7e4e874495e4fbf
           </Route>
         </Switch>
     </Router>
