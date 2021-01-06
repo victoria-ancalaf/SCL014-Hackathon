@@ -1,0 +1,12 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .gift-new-container {
+    width: 100%;
+  }
+
+  .aqua-box-new {
+    width: 358px;
+    height: 520px;
+    background: #18d5ca;
+    border-radius: 15px;
+  }
+}

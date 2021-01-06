@@ -11,7 +11,7 @@ const NewMacher = () => {
         <Link to="/gana">
         <div className="back-categories">{"<"}</div>
         </Link>
-        <p>Nivel 1</p>
+        <p className='levelbold'>Nivel 1</p>
         <p> </p>
       </div>
       <div className="containerMasterLevels">
@@ -38,10 +38,12 @@ const NewMacher = () => {
               <li className='list1'>1 Caja sorpresa de regalo anual(desde los 50 puntos).</li>
               <li className='list1'>Descuentos personalizados, en base a tus preferencias.</li>
             </ul>
-          </div>
           <div className="bottomCardLevel">
+            <Link to="/abrircaja">
             <button className='btnCardLevel'>Activar mi caja</button>
+            </Link>
             <button  className='btnCardLevel'>Mis descuentos</button>
+          </div>
           </div>
         </div>
       </div>
