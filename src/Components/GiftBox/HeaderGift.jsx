@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HeaderGift = () => {
     return (
         <div className="header-mision-cont">
-      <Link to="/">
+      <Link to="/gana/newmacher">
         <div className="mision-header-1">
           <h2 className="mision-text">{"<"}</h2>
         </div>
