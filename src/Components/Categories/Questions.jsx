@@ -5,12 +5,12 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import "./Styles/Questions.css";
 
 const Questions = () => {
   const useStyles = makeStyles((theme) => ({
     root: {
       width: "100%",
+      padding: "15 20px",
     },
     heading: {
       fontSize: theme.typography.pxToRem(18),
