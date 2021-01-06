@@ -33,6 +33,10 @@ const CarouselLevel1 = () => {
   return (
     <div className="containerCarouselDiscLevel1">
       <AliceCarousel
+      className='aliceCarDiscLvl1'
+      paddingLeft={30}
+      swipeDelta={0}
+      swipeExtraPadding={0}
         mouseTracking
         items={items}
         infinite={true}

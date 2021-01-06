@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
-// import HeaderWelcomeDiscount from './HeaderWelcomeDiscount';
+import HeaderWelcomeDiscount from './HeaderWelcomeDiscount';
 import './Styles/WelcomeDiscount.css'
 import './Styles/WelcomeDiscount.css'
-import Header from '../Categories/Header'
+
 
 const WelcomeDiscount = () => {
     return (
         <Fragment>
-            <Header />
+            <HeaderWelcomeDiscount />
             <div className="containerAllDiscount">
         <div className="container-header-1">
         
