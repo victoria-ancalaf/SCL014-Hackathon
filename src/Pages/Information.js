@@ -6,7 +6,7 @@ const Information = () => {
     return (
         <div>
             <InfoTextHeader/>
-            {/* <Questions /> */}
+            <Questions />
         </div>
     );
 }
