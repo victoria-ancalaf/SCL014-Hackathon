@@ -7,8 +7,10 @@ const MisionPoints = () => {
         <div className="buttons-saldo-container">
             <Link to="/misiones">
             <button className="saldo-btn">Ver Misiones</button>
-            </Link>
+            </Link >
+            <Link to="/puntos">
             <button className="saldo-btn">Mis puntos</button>
+            </Link >
         </div>
     );
 }

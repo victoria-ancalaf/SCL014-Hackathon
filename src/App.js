@@ -12,6 +12,7 @@ import Discount from "./Pages/Discount";
 import MisionFriend from "./Components/Missions/MisionFriend";
 import Points from "./Components/Categories/Points";
 import Gift from "./Pages/Gift";
+import GiftNewMacher from "./Pages/GiftNewMacher";
 
 
 function App() {
@@ -56,6 +57,11 @@ function App() {
         <Switch>
           <Route path="/abrircaja" exact>
             <Gift />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/regalodbs" exact>
+            <GiftNewMacher />
           </Route>
         </Switch>
         <Switch>

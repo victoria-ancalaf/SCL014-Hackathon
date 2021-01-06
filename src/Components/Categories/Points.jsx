@@ -27,10 +27,12 @@ const Points = () => {
           counterClockwise={true}
           styles={buildStyles({
             pathColor: "#00EDDF",
-            trailColor: "#BDBDBD",
+            trailColor: "#D8D8D8",
             pathTransitionDuration: 0.5,
-          })}
+          }
+          )}
           strokeWidth={12}
+          
         >
           <div
             style={{

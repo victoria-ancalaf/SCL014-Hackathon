@@ -2,12 +2,13 @@
     .welc-cont{
         font-family: 'Nunito';
         margin: 7% 4%;
-        color:#3333;
+        color:#333333;
     }
     .title-welc{
         font-size:18px;
         font-weight: bold;
         margin-bottom: 2%;
+        color:#333333;
     }
     .category{ 
         display: flex; 

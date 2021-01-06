@@ -12,9 +12,7 @@ const MenuComponent = () => {
  
   return (
       <Fragment>
-        <div className="hr-div">
-   <hr />
-   </div>
+   
     <div className="container-icon-menu">
    
       <div className="icon-box1">
