@@ -1,12 +1,14 @@
-import React from 'react'
-import Questions from '../Components/Categories/Questions'
+import React from 'react';
+import Questions from '../Components/Categories/Questions';
+import InfoTextHeader from '../Components/Categories/InfoTextHeader';
 
 const Information = () => {
     return (
         <div>
-            <Questions />
+            <InfoTextHeader/>
+            {/* <Questions /> */}
         </div>
-    )
+    );
 }
 
-export default Information
+export default Information;
