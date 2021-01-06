@@ -1,6 +1,7 @@
 import React from "react";
 import unlock from '../../Img/unlock.svg';
 import CarouselLevel1 from "./Carousel/carouselLevel1";
+import './Styles/discountlvl1.css';
 
 const DiscountLvl1 = () => {
   return (
