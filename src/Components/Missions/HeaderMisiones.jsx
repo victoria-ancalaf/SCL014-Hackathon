@@ -1,5 +1,5 @@
 import React from 'react'
-import './Styles/HeaderMisiones'
+import './Styles/HeaderMisiones.css'
 
 const HeaderMisiones = () => {
     return (

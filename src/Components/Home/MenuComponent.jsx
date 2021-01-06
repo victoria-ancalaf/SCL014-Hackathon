@@ -5,14 +5,16 @@ import Transferir from '../../Img/Transferir.svg'
 import Tarjetas from '../../Img/Tarjetas.svg'
 import Servicios from '../../Img/Servicios.svg'
 import Gana from '../../Img/Gana.svg'
-
+import {Link} from "react-router-dom";
 
 
 const MenuComponent = () => {
  
   return (
       <Fragment>
-   
+        <div className="hr-div">
+   <hr />
+   </div>
     <div className="container-icon-menu">
    
       <div className="icon-box1">
@@ -40,12 +42,14 @@ const MenuComponent = () => {
           <p className="text-icon">Servicios</p>
         </div>
       </div>
+      <Link to="/gana">
       <div className="icon-box5">
         <img src={Gana} className="img-icon" alt={"gana"}></img>
         <div>
           <p className="text-icon">Gana</p>
         </div>
       </div>
+      </Link>
     </div>
    
     </Fragment>

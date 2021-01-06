@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import FormPage from "./Pages/FormPage";
 import HomePage from './Pages/HomePage';
 import Categories from './Pages/Categories';
+import Misiones from './Pages/Misiones'
 
 function App() {
   return (
@@ -18,8 +19,13 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route path="/categorias" exact>
+        <Route path="/gana" exact>
           <Categories/>
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/misiones" exact>
+          <Misiones/>
         </Route>
       </Switch>
  

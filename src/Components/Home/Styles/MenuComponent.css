@@ -38,7 +38,12 @@
     color: #bdbdbd;
     font-weight: bold;
   }
+
+  .hr-div{
+    padding-top: 8vh;
+  }
   hr {
-    border-color: #bdbdbd;
+    border: 1px solid #BDBDBD; 
+   
   }
 }

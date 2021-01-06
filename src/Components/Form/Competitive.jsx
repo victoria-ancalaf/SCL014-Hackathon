@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 const Competitive = () => {
   return (
     <Fragment>
+      <div className="AgeHeader"></div>
       <div className="container-competitive">
+      
         <div className="box-textCompetitive">
           <h2 className="text-Competitive">¿Te consideras competitiv@?</h2>
         </div>
@@ -17,10 +19,10 @@ const Competitive = () => {
             <button className="btn-Competitive"> No, para nada</button>
           </div>
           <div>
-            <button className="btn-Competitive">Lo justo y necesario</button>
+            <button className="btn-Competitive3">Lo justo y necesario</button>
           </div>
         </div>
-        <div>
+        <div className="competitive-navigation">
         <div className="navigation-container">
       <div>
         <Link to="/form4">

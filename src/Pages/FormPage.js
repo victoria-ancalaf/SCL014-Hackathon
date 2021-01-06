@@ -8,6 +8,7 @@ import Competitive from '../Components/Form/Competitive'
 import Time from '../Components/Form/Time'
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import HomePage from './HomePage';
+import Categories from './Categories'
 
 const FormPage = () => {
   return (
@@ -51,6 +52,11 @@ const FormPage = () => {
         <Switch>
           <Route path="/form7" exact>
             <ModalThanks/>
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/gana" exact>
+            <Categories/>
           </Route>
         </Switch>
       </Router>
