@@ -8,7 +8,7 @@ import Levels from "../Components/Categories/Levels";
 import Misiones from "./Misiones";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProgressBar from "../Components/Categories/ProgressBar";
-import Information from "./Information";
+import Header from '../Components/Categories/Header';
 
 const Categories = () => {
   return (
@@ -36,6 +36,11 @@ const Categories = () => {
         <Switch>
           <Route path="/gana/machlover" exact>
             <MachLover />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/gana/newmacher/header" exact>
+            <Header />
           </Route>
         </Switch>
       </Router>
