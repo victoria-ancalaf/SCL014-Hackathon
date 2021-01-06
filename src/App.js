@@ -11,6 +11,7 @@ import Information from "./Pages/Information";
 import TrueMacher from "./Components/Categories/TrueMacher";
 import MachLover from "./Components/Categories/MachLover";
 import Information from "./Pages/Information";
+
 import Discount from "./Pages/Discount";
 
 
@@ -57,7 +58,12 @@ function App() {
           <Route path="/misiones/cabify" exact>
             <CabifyMission/>
           <Route path="/informacion" exact>
-            <Information />
+            <Information/>
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/misionamigo" exact>
+            <MisionFriend/>
           </Route>
         </Switch>
         <Switch>
