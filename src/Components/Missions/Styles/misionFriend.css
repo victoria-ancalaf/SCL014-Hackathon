@@ -1,3 +1,4 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 .containerCardMisionF{
     display: flex;
     flex-flow: column nowrap;
@@ -50,4 +51,5 @@
 }
 .descriptionList{
     font-size: 13px;
+}
 }
