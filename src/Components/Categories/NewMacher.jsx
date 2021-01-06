@@ -39,7 +39,9 @@ const NewMacher = () => {
               <li className='list1'>Descuentos personalizados, en base a tus preferencias.</li>
             </ul>
           <div className="bottomCardLevel">
+            <Link to="/abrircaja">
             <button className='btnCardLevel'>Activar mi caja</button>
+            </Link>
             <button  className='btnCardLevel'>Mis descuentos</button>
           </div>
           </div>
