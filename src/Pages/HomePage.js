@@ -4,6 +4,7 @@ import Saldo from "../Components/Home/Saldo";
 import Dashboard from "../Components/Home/Dashboard";
 import MenuComponent from '../Components/Home/MenuComponent'; 
 import ModalWelcome from '../Components/Form/modalWelcome';
+import IconMachelo from '../Components/Home/iconMachelo';
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Carousel/>
       <Dashboard/>
       <MenuComponent/>
+      <IconMachelo/>
     </div>
   );
 };
