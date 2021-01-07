@@ -19,8 +19,8 @@ const Categories = () => {
       <MisionPoints/>
       <Levels/>
       <InfoPointDiscount/>
-      <Router>
       <MenuCategories/> 
+      <Router>
         <Switch>
           <Route path="/misiones" exact>
             <Misiones />

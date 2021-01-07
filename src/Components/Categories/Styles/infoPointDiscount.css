@@ -1,11 +1,12 @@
 .containerInfoPointDiscount{
     display: flex;
     flex-flow: row nowrap;
-    margin-top:22px;
+
     width: 100%;
     height: 41px;
     justify-content: space-around;
     align-items: center;
+    padding-bottom:90px;
 }
 .btnMACHPoints, .btnDiscount{
     text-align: center;
