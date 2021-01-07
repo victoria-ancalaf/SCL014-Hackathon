@@ -9,6 +9,7 @@ import Time from '../Components/Form/Time'
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import HomePage from './HomePage';
 import Categories from './Categories'
+import ModalAlmostFinish from "../Components/Form/ModalAlmostFinish";
 
 const FormPage = () => {
   return (
@@ -36,21 +37,26 @@ const FormPage = () => {
         </Switch>
         <Switch>
           <Route path="/form4" exact>
-            <Time />
+            <ModalAlmostFinish />
           </Route>
         </Switch>
         <Switch>
           <Route path="/form5" exact>
-            <Competitive />
+            <Time />
           </Route>
         </Switch>
         <Switch>
           <Route path="/form6" exact>
-            <Geolocation />
+            <Competitive />
           </Route>
         </Switch>
         <Switch>
           <Route path="/form7" exact>
+            <Geolocation />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/form8" exact>
             <ModalThanks/>
           </Route>
         </Switch>
