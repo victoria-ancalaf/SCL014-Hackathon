@@ -1,17 +1,18 @@
-// import { CenterFocusStrong } from "@material-ui/icons";
-import React from "react";
-import "../Categories/Styles/ProgressBar.css";
-import {
-  CircularProgressbarWithChildren,
-  buildStyles,
-} from "react-circular-progressbar";
-import { makeStyles } from "@material-ui/core/styles";
+///import { CenterFocusStrong } from "@material-ui/icons";
+import React, { Fragment } from "react";
+import '../Categories/Styles/ProgressBar.css'
+import VisibilitySensor from "react-visibility-sensor";
+import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
+import { makeStyles} from "@material-ui/core/styles";
 import "react-circular-progressbar/dist/styles.css";
+// npm install react-visibility-sensor
 
 const useStyle = makeStyles({
   divProgrees: {
     width: 150,
+    
   },
+ 
 });
 
 const ProgressBar = () => {
@@ -22,31 +23,40 @@ const ProgressBar = () => {
         <p className="text-win">Gana</p>
       </div>
       <div className="circular-bar">
+      <VisibilitySensor>
+      {({ isVisible }) => {
+        const percentage = isVisible ? 50 : 0;
+        return (
         <CircularProgressbarWithChildren
-          value={50}
+          value={percentage}
           className={classes.divProgrees}
           counterClockwise={true}
           styles={buildStyles({
-            pathColor: "#00EDDF",
-            trailColor: "#ffff",
-            pathTransitionDuration: 0.5,
+            pathColor:'#00EDDF',
+            trailColor: '#ffff',
+            pathTransitionDuration: 0.9,
+            transform: 'rotate(0.2turn)',
+            
           })}
-          strokeWidth={12}
+         strokeWidth={12}
+        
         >
-          {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
-
+         
           <div
             style={{
               fontSize: 21,
               marginTop: -5,
               width: 103,
               textAlign: "center",
-              color: "#ffff",
+              color: '#ffff',
             }}
           >
             <strong>50 PUNTOS</strong> De 100
           </div>
         </CircularProgressbarWithChildren>
+          );
+        }}
+      </VisibilitySensor>
       </div>
       <div className="text-new-matcherCategory">
         <p className="text-category">
