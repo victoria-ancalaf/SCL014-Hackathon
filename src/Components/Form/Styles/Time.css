@@ -42,6 +42,10 @@
     margin: 22px 100px 0;
   }
 
+.btn-time:focus {
+  background-color: #D8D8D8;
+}
+
   .navigation-time {
     padding-top: 147px;
   }

@@ -11,9 +11,9 @@ const Gender = () => {
         <p className="gender-p">¿Qué género te define?</p>
       </section>
       <section className="gender-buttons">
-        <button className="gender-btn">Femenino</button>
-        <button className="gender-btn">Masculino</button>
-        <button className="gender-btn">No binario</button>
+        <button tabindex="1" className="gender-btn">Femenino</button>
+        <button tabindex="3" className="gender-btn">Masculino</button>
+        <button tabindex="4" className="gender-btn">No binario</button>
       </section>
       <div className="gender-navigation">
         <div className="navigation-container">

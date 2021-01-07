@@ -38,6 +38,10 @@
     margin: 22px 129px 0px;
   }
 
+  .btn-Competitive:focus{
+    background-color: #D8D8D8;
+  }
+
   .btn-Competitive3 {
     background-color: #ffff;
     color: #555555;
@@ -53,6 +57,10 @@
     text-align: center;
     color: #555555;
     margin: 22px 129px 0px;
+  }
+
+  .btn-Competitive3:focus {
+    background-color: #D8D8D8;
   }
 
   .box-btn {

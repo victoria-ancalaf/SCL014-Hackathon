@@ -13,13 +13,13 @@ const Competitive = () => {
         </div>
         <div className="box-btn">
           <div>
-            <button className="btn-Competitive">Sí, mucho</button>
+            <button tabindex="1" className="btn-Competitive">Sí, mucho</button>
           </div>
           <div>
-            <button className="btn-Competitive"> No, para nada</button>
+            <button tabindex="2" className="btn-Competitive"> No, para nada</button>
           </div>
           <div>
-            <button className="btn-Competitive3">Lo justo y necesario</button>
+            <button tabindex="3" className="btn-Competitive3">Lo justo y necesario</button>
           </div>
         </div>
         <div className="competitive-navigation">

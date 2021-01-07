@@ -10,9 +10,9 @@ const Time = () => {
         <p className="time-p">¿Qué opinas de jugar contra el tiempo?</p>
       </div>
       <div className="buttons-time">
-        <button className="btn-time">Me encanta</button>
-        <button className="btn-time">Me estresa</button>
-        <button className="btn-time">No sé</button>
+        <button tabindex="1" className="btn-time">Me encanta</button>
+        <button tabindex="2" className="btn-time">Me estresa</button>
+        <button tabindex="3" className="btn-time">No sé</button>
       </div>
       <div className="navigation-time">
         <div className="navigation-container">

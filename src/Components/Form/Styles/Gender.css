@@ -48,6 +48,10 @@
     margin: 22px 129px 0px;
   }
 
+  .gender-btn:focus {
+    background-color: #D8D8D8;
+  }
+
   .gender-navigation {
     padding-top: 179px;
   }
