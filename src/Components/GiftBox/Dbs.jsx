@@ -12,7 +12,7 @@ const Dbs = () => {
           <img src={Title} alt="Canjear regalo" />
         </div>
         <div className="button-gift-cont">
-          <Link to="/">
+          <Link to="/qr">
             <button className="btn-gift-canjear">Canjear Regalo</button>
           </Link>
         </div>
