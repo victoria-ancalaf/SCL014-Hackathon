@@ -22,7 +22,7 @@ const Time = () => {
             </Link>
           </div>
           <div>
-            <Link to="/form5">
+            <Link to="/form6">
               <button className="navigation-btn">Siguiente{" >"}</button>
             </Link>
           </div>

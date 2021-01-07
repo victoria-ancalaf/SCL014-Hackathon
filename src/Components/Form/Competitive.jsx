@@ -25,12 +25,12 @@ const Competitive = () => {
         <div className="competitive-navigation">
         <div className="navigation-container">
       <div>
-        <Link to="/form4">
+        <Link to="/form5">
         <button className="navigation-btn">{"< "}Atrás</button>
         </Link>
       </div>
       <div>
-        <Link to="/form6">
+        <Link to="/form7">
         <button className="navigation-btn">Siguiente{" >"}</button>
         </Link>
       </div>
