@@ -23,12 +23,16 @@
   }
 
   .labial {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
- .dbs-contenido {
+  .dbs-contenido {
     padding-top: 10px;
- }
+  }
+
+  .qr-cont {
+    margin-top: 43px;
+  }
 }

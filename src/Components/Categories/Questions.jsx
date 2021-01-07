@@ -63,7 +63,7 @@ const Questions = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography className={classes.content}>
               ¡De muchas maneras! Algunas veces tendrás que ingresar un cupón de
               descuento, otras veces se activará automáticamente al pagar con tu
               tarjeta. Cada uno de los beneficios tendrá detallada la
@@ -83,7 +83,7 @@ const Questions = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography className={classes.content}>
               Siempre trataremos de estar actualizando nuestros beneficios, pero
               algunos pueden tener fecha de vencimiento. En el detalle de cada
               beneficio, siempre podrás encontrar su vigencia. Pero ojo, si el
@@ -104,7 +104,7 @@ const Questions = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography className={classes.content}>
               ¡Mediante nuestras misiones! Tenemos 2 tipos de misiones: Las
               permanentes, que estarán constantemente activas, hasta que las
               realices, y otras que tienen un tiempo de caducidad (algunas duran

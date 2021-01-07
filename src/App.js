@@ -13,6 +13,7 @@ import MisionFriend from "./Components/Missions/MisionFriend";
 import Points from "./Components/Categories/Points";
 import Gift from "./Pages/Gift";
 import GiftNewMacher from "./Pages/GiftNewMacher";
+import QRNew from "./Pages/QRNew";
 
 
 function App() {
@@ -62,6 +63,11 @@ function App() {
         <Switch>
           <Route path="/regalodbs" exact>
             <GiftNewMacher />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/qr" exact>
+            <QRNew />
           </Route>
         </Switch>
         <Switch>
