@@ -10,9 +10,9 @@ import MuiDialogContent from "@material-ui/core/DialogContent";
 import MuiDialogActions from "@material-ui/core/DialogActions";
 import Typography from "@material-ui/core/Typography";
 import themeGeo from "../Form/ThemeGeo";
-import geolocalizacion from "../../Img/geolocalizacion.svg";
-import "./Styles/Geolocation.css";
+import amorypaz from "../../Img/amorypaz.svg";
 import { Link } from "react-router-dom";
+import "../Form/Styles/ModalAlmostFinish.css";
 
 const useStyle = makeStyles({
   contentGeo: {
@@ -35,7 +35,7 @@ const useStyle = makeStyles({
   },
   type: {
     color: "#999999",
-  }
+  },
 });
 
 const DialogContent = withStyles((theme) => ({
@@ -52,7 +52,7 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-export default function Geolocation() {
+export default function ModalAlmostFinish() {
   const classesGeo = useStyle();
   const [open, setOpen] = useState(true);
 
@@ -69,39 +69,29 @@ export default function Geolocation() {
         open={open}
       >
         <div className="box-imgGeo">
-          <img className="img-Geo" alt="Geolocation" src={geolocalizacion} />
+          <img className="img-Love" alt="Love" src={amorypaz} />
         </div>
         <DialogContent>
-          <h3 className="title-Geo"> Vamos donde tu vayas</h3>
+          <h3 className="title-Geo">Ánimo Juana, ¡Estamos casi terminando!</h3>
           <Typography gutterBottom className={classesGeo.type}>
-            Queremos ofrecerte los mejores servicios en función de tu ubicación,
-            por lo que es necesario acceder a tu ubicación incluso cuando la
-            aplicación esta cerrada o no esta en uso.
+           Estamos por finalizar la definición de tu perfil, agradecemos la buena disposición que has tenido.
           </Typography>
         </DialogContent>
         <DialogActions className={classesGeo.dialogBtnsClass}>
-          <Link to="/">
+          <Link to="/form5">
             <Button
               className={classesGeo.btnGeo}
               variant="contained"
               onClick={handleClose}
               color="primary"
             >
-              Cancelar
+              Entendido :)
             </Button>
           </Link>
-          <Link to="/form8">
-            <Button
-              className={classesGeo.btnGeo}
-              variant="contained"
-              onClick={handleClose}
-              color="primary"
-            >
-              Activar
-            </Button>
-          </Link>
+         
         </DialogActions>
       </Dialog>
     </ThemeProvider>
   );
 }
+
