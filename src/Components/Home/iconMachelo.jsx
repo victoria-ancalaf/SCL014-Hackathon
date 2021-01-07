@@ -45,12 +45,21 @@ const useStyles = makeStyles((theme) => ({
     height: "188px",
     backgroundColor: " #FFFFFF",
     borderRadius: "15px",
+    marginLeft: "45px",
+    marginBottom: "39px",
+    marginTop: "30px",
   },
   writem: {
     width: "267px",
     height: "46px",
     backgroundColor: " #FFFFFF",
     borderRadius: "15px",
+    marginLeft: "45px",
+    marginBottom: "24px",
+    fontFamily: "Nunito",
+    color: "##BDBDBD",
+    fontSize: "16px",
+    fontWeight: "bold",
   },
   enviarbtn: {
     width: "82px",
@@ -58,6 +67,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: " #999999",
     border: "1px solid #999999",
     borderRadius: "5px",
+    alignSelf: "center",
+    fontSize: "14.5px",
+    color: "#580CE5",
+    fontWeight: "bold",
+    marginLeft: "143px",
   },
   textitle: {
     fontFamily: "Nunito",
@@ -83,6 +97,19 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: " #580CE5",
     borderStyle: "none",
     fontWeight: "bold",
+    marginLeft: "14px",
+    height: "30px",
+    display: "flex",
+    alignSelf: "center",
+  },
+  parrafoM: {
+    fontFamily: "Nunito",
+    fontWeight: "bold",
+    fontSize: "16px",
+    color: "#FFFFFF",
+    textAlign: "center",
+    width: "266px",
+    paddingLeft: "47px",
   },
 }));
 
@@ -108,7 +135,7 @@ const IconMachelo = () => {
           ¿Tienes dudas?
         </h2>
       </div>
-      <p id="simple-modal-description">
+      <p className={classes.parrafoM} id="simple-modal-description">
         En MACH te acompañamos todo el tiempo.
       </p>
       <div className={classes.equipo}>
