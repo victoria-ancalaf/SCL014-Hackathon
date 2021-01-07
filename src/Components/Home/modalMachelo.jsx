@@ -74,6 +74,13 @@ function rand() {
     },
   }));
 
+
+const ModalMachelo = ({modalOn, setModalOn}) => {
+    const classModal = modalOn === true ? 'modalVisible' : 'modalInvisible'
+    return(
+        <div className={classModal} modalOn={modalOn} onClick={() => setModalOn(!modalOn)}>
+            Mo0dalmacheo
+
 const ModalMachelo = () => {
     const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
@@ -92,6 +99,7 @@ const ModalMachelo = () => {
       <div className={classes.firstcont}>
         <button className={classes.btnback}>{"<"}</button>
         <h2 className={classes.dudas} id="simple-modal-title">¿Tienes dudas?</h2>
+
         </div>
       <p id="simple-modal-description">
       En MACH te acompañamos todo el tiempo. 
