@@ -4,6 +4,7 @@ import Truck from "../../Img/mision-1.svg";
 import Card from "../../Img/mision-2.svg";
 import Shopping from "../../Img/mision-3.svg";
 import Pc from "../../Img/mision-4.svg";
+import {Link} from 'react-router-dom'
 
 const Permanentes = ({ visible }) => {
   if (visible === false) {
@@ -12,6 +13,7 @@ const Permanentes = ({ visible }) => {
   return (
     <div className="mission-content">
       <div className="mission-buttons">
+        <Link to="/misiones/cabify">
         <div className="btn-mission">
           <div className="mision-img">
             <img src={Truck} alt="Viaja" />
@@ -26,6 +28,7 @@ const Permanentes = ({ visible }) => {
             </p>
           </div>
         </div>
+        </Link>
         <div className="btn-mission">
           <div className="mision-img">
             <img src={Card} alt="Gasta" />

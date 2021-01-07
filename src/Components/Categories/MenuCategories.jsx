@@ -11,12 +11,14 @@ const MenuCategories = () => {
   return (
     <Fragment>
       <div className="container-icon-menu">
+        <Link to="/">
         <div className="icon-box1">
           <img src={Inicio} className="img-icon" alt={"inicio"}></img>
           <div>
             <p className="text-icon">Inicio</p>
           </div>
         </div>
+        </Link>
         <div className="icon-box2">
           <img src={Transferir} className="img-icon" alt={"transferir"}></img>
           <div>

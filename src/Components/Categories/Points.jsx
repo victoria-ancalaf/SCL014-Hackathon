@@ -33,7 +33,7 @@ const Points = () => {
           styles={buildStyles({
             pathColor: "#00EDDF",
             trailColor: "#D8D8D8",
-            pathTransitionDuration: 0.5,
+            pathTransitionDuration: 0.9,
             transform: 'rotate(0.2turn)',
           }
           )}

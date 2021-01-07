@@ -49,10 +49,6 @@
     margin: 8px;
   }
 
-  .input-box:focus {
-    background-color: rgba(92, 62, 202, 0.7)
-  }
-
   .navigation-component {
     width: 100%;
     padding-top: 220px;

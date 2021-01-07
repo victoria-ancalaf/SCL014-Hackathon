@@ -1,6 +1,7 @@
 import React from "react";
 import '../Styles/carousel.css';
 import homy from '../../../Img/homy.svg';
+import { Link } from "react-router-dom";
 
 const ThirdSlide = () => {
   return (
@@ -12,7 +13,9 @@ const ThirdSlide = () => {
         <img className='imgCarousel1' src={homy} alt="homy" />
       </div>
       <div>
+        <Link to="/descuentos">
         <button className='btnMoreCarousel'>Ver más</button>
+        </Link>
       </div>
     </div>
   );

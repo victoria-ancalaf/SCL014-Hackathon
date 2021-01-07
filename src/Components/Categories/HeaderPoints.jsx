@@ -6,7 +6,7 @@ const HeaderPoints = () => {
     return(
         <Fragment>
       <div className="headerPoints">
-        <Link to="/">
+        <Link to="/gana">
         <div className="back-categories">{"<"}</div>
         </Link>
         <p className="text-header-points">Mis Puntos</p>

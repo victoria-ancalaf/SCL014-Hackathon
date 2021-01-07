@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import HeaderWelcomeDiscount from './HeaderWelcomeDiscount';
+import DiscountHeader from './DiscountHeader';
 import adidas from '../../Img/Adidas2.svg'
 import { Link } from 'react-router-dom';
 import './Styles/Discounts.css';
@@ -7,10 +7,10 @@ import './Styles/Discounts.css';
 export const DiscountAdidas = () => {
     return(
         <Fragment>
-        <HeaderWelcomeDiscount />
+        <DiscountHeader />
         <div className='dContainer'>
         <img src={adidas} className='adidPic' alt='adidas desc'></img>
-        <Link>
+        <Link to="/descuentos/adidas/qr1">
         <button className='btndsc'>Ver Cupón</button>
         </Link>
         </div>

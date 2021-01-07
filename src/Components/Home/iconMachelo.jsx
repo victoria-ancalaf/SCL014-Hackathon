@@ -6,13 +6,11 @@ import Modal from "@material-ui/core/Modal";
 import AvatarMachelo from "../../Img/machelobig.svg";
 import AvatarPeque from "../../Img/machelopeq.svg";
 
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
+
 
 function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
+  const top = 50;
+  const left = 50;
 
   return {
     top: `${top}%`,
@@ -137,7 +135,7 @@ const IconMachelo = () => {
   const body = (
     <div style={modalStyle} className={classes.paper}>
       <div className={classes.firstcont}>
-        <button className={classes.btnback}>{"<"}</button>
+        <button className={classes.btnback} onClick={handleClose}>{"<"}</button>
         <h2 className={classes.dudas} id="simple-modal-title">
           ¿Tienes dudas?
         </h2>

@@ -19,7 +19,9 @@ const Age = () => {
       <div className="navigation-component" >
       <div className="navigation-container">
       <div>
-        <button className="navigation-btn">{"< "}Atrás</button>
+      <Link to="/">
+              <button className="navigation-btn">{"< "}Atrás</button>
+            </Link>
       </div>
       <div>
         <Link to="/form2">

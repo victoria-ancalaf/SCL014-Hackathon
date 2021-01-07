@@ -7,6 +7,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import { makeStyles } from "@material-ui/core/styles";
 import "react-circular-progressbar/dist/styles.css";
 import "../Styles/carousel.css";
+import { Link } from "react-router-dom";
 
 const useStyle = makeStyles({
   divProgrees: {
@@ -56,7 +57,9 @@ const FirstSlide = () => {
         <p>Pasa a la siguiente categoría y recibe mejores beneficios</p>
       </div>
       <div>
+        <Link to="/misiones">
         <button className="btnMisionCarousel">Ver misiones</button>
+        </Link>
       </div>
     </div>
   );

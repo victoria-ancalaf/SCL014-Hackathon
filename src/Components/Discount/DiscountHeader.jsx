@@ -2,14 +2,14 @@ import React from 'react';
 import './Styles/HeaderWelcomeDiscount.css';
 import { Link } from 'react-router-dom';
 
-const HeaderWelcomeDiscount = () => {
+const DiscountHeader = () => {
     return (
         <div className="header-discount">
-            <Link to='/gana'>
             <div className="header-box">
+                <Link to='/descuentos'>
                 <h2 className="discount-text">{"<"}</h2>
+                </Link>
             </div>
-            </Link>
             <div className="text-box-discount">
                 <h2 className="discount-text">Descuentos</h2>
             </div>
@@ -18,4 +18,4 @@ const HeaderWelcomeDiscount = () => {
     );
 };
 
-export default HeaderWelcomeDiscount;
+export default DiscountHeader;
