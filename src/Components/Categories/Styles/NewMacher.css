@@ -112,6 +112,10 @@
     font-weight: bold;
     font-size:14.5px;
 }
+.btnCardLevel:hover{
+    background: #9B55FF;
+    color: #5C3ECA;
+}
 .btnCardLevelblck{
     display: flex;
     align-items: center;

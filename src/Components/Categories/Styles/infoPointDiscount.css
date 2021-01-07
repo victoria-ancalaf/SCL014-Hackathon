@@ -18,3 +18,7 @@
     padding:10px 15px;
     width: auto;
 }
+.btnMACHPoints:hover, .btnDiscount:hover{
+    background: #9B55FF;
+    color: #5C3ECA;
+}

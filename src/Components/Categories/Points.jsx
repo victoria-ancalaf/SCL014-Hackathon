@@ -4,6 +4,7 @@ import {
   CircularProgressbarWithChildren,
   buildStyles,
 } from "react-circular-progressbar";
+import VisibilitySensor from "react-visibility-sensor";
 import { makeStyles } from "@material-ui/core/styles";
 import "react-circular-progressbar/dist/styles.css";
 import "../Categories/Styles/Points.css";
@@ -21,14 +22,19 @@ const Points = () => {
         <HeaderPoints />
       </div>
       <div className="circular-bar-points">
+      <VisibilitySensor>
+      {({ isVisible }) => {
+        const percentage = isVisible ? 50 : 0;
+        return (
         <CircularProgressbarWithChildren
-          value={50}
+          value={percentage}
           className={classes.divProgrees}
           counterClockwise={true}
           styles={buildStyles({
             pathColor: "#00EDDF",
             trailColor: "#D8D8D8",
             pathTransitionDuration: 0.5,
+            transform: 'rotate(0.2turn)',
           }
           )}
           strokeWidth={12}
@@ -46,6 +52,9 @@ const Points = () => {
             <strong>50 PUNTOS</strong> De 100
           </div>
         </CircularProgressbarWithChildren>
+          );
+        }}
+      </VisibilitySensor>
       </div>
       <div className="container-boxes">
         <div className="boxPoints">
