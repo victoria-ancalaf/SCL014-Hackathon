@@ -1,20 +1,10 @@
 import React, { useState, Fragment } from "react";
-import ola from '../../Img/iconMachelo.png';
+import ola from "../../Img/iconMachelo.png";
 import "./Styles/iconMachelo.css";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
-
-// const IconMachelo = () => {
-//   let [modalOn, setModalOn] = useState(false);
-//   return (
-//     <Fragment>
-//       <div className="containerIconMachelo" modalOn={modalOn} onClick={() => setModalOn(!modalOn) }>
-//         <img className="iconMachelito" src={ola} alt="icon" />
-//       </div>
-//       <ModalMachelo modalOn={modalOn} setModalOn={setModalOn}/>
-//     </Fragment>
-//   );
-// };
+import AvatarMachelo from "../../Img/machelobig.svg";
+import AvatarPeque from "../../Img/machelopeq.svg";
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -41,25 +31,28 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: theme.shadows[5],
   },
   equipo: {
-    width: "267px",
-    height: "188px",
+    width: "227px",
+    height: "148px",
     backgroundColor: " #FFFFFF",
     borderRadius: "15px",
     marginLeft: "45px",
-    marginBottom: "39px",
-    marginTop: "30px",
+    marginBottom: "37px",
+    marginTop: "25px",
+    padding: "20px",
   },
   writem: {
-    width: "267px",
+    width: "247px",
     height: "46px",
     backgroundColor: " #FFFFFF",
     borderRadius: "15px",
     marginLeft: "45px",
-    marginBottom: "24px",
+    marginBottom: "22px",
     fontFamily: "Nunito",
-    color: "##BDBDBD",
+    color: "#BDBDBD",
     fontSize: "16px",
     fontWeight: "bold",
+    lineHeight: "44px",
+    paddingLeft: "20px",
   },
   enviarbtn: {
     width: "82px",
@@ -78,6 +71,13 @@ const useStyles = makeStyles((theme) => ({
     color: "#333333",
     fontSize: "16px",
     fontWeight: "bold",
+    paddingLeft: "5px",
+  },
+  textp: {
+    fontFamily: "Nunito",
+    color: "#333333",
+    fontSize: "16px",
+    fontWeight: "bold",
   },
   firstcont: {
     display: "flex",
@@ -88,6 +88,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "20px",
     color: "#FFFFFF",
     paddingLeft: "22%",
+    paddingTop: "3%",
   },
   btnback: {
     fontFamily: "Nunito",
@@ -110,16 +111,22 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     width: "266px",
     paddingLeft: "47px",
+    marginTop: "5px",
+  },
+  macheloAv: {
+    display: "flex",
+  },
+  macheloIcono: {
+    display: "flex",
+    justifyContent: "center",
   },
 }));
-
-
 
 const IconMachelo = () => {
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
-  
+
   const handleOpen = () => {
     setOpen(true);
   };
@@ -135,12 +142,18 @@ const IconMachelo = () => {
           ¿Tienes dudas?
         </h2>
       </div>
+      <div className={classes.macheloIcono}>
+      <img src={AvatarMachelo} alt="Machelo" />
+      </div>
       <p className={classes.parrafoM} id="simple-modal-description">
         En MACH te acompañamos todo el tiempo.
       </p>
       <div className={classes.equipo}>
-        <h3 className={classes.textitle}>Equipo MACH</h3>
-        <p>Hola Juana, ¿en qué te podemos ayudar?</p>
+        <div className={classes.macheloAv}>
+      <img src={AvatarPeque} alt="Machelo" />
+        <h3 className={classes.textitle}>MACHelo</h3>
+        </div>
+        <p className={classes.textp}>Hola Juana, ¿en qué te puedo ayudar?</p>
       </div>
       <div className={classes.writem}>Escribir mensaje</div>
       <button className={classes.enviarbtn}>Enviar</button>
@@ -160,8 +173,7 @@ const IconMachelo = () => {
       >
         {body}
       </Modal>
-      </Fragment>
-    
+    </Fragment>
   );
 };
 
