@@ -58,7 +58,7 @@ const ModalThanks = () => {
 
           <DialogContentText className={classes.texthanks}>
             Recuerda que siempre pueder redefinir tu perfil, ingresando a
-            "PERFIL" y luego "REDEFNIR".
+            "PERFIL" y luego "REDEFINIR".
           </DialogContentText>
         </DialogContent>
         <MuiDialogActions className={classes.dialogBtnsClass}>
