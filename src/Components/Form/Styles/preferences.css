@@ -25,7 +25,16 @@
   flex-flow: row wrap;
   padding: 0px 56px;
 }
-.container {
+
+.containerEmoji {
+  width: 20px;
+  height: 15px;
+  margin-right: 2%;
+}
+.emoji {
+  width: 100%;
+}
+.hide-checkbox + label {
   display: flex;
   flex-flow: row nowrap;
   border: 1px solid #d8d8d8;
@@ -36,32 +45,23 @@
   color: #333333;
   margin: 2.5%;
   cursor: pointer;
-}
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.container:hover {
-  background-color: #d8d8d8;
-  border: 1px solid #5c3eca;
-}
-.container input:checked {
-  border: 1px solid #5c3eca;
-  background-color: #d8d8d8;
-}
-.container:active {
-  border: 1px solid #5c3eca;
-  background-color: #d8d8d8;
-}
-.containerEmoji {
-  width: 20px;
-  height: 15px;
-  margin-right: 2%;
-}
-.emoji {
-  width: 100%;
-}
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  }
+  .hide-checkbox:checked + label {
+    border: 1px solid #5c3eca;
+    background-color: #d8d8d8;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+
+
+
+
+
+  
+
 }
